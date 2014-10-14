@@ -1,0 +1,65 @@
+.button_container{
+	width:100%;
+	background: -webkit-linear-gradient(left, #0b73ba , #72cdf4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #0b73ba, #72cdf4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #0b73ba, #72cdf4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #0b73ba , #72cdf4); /* Standard syntax (must be last) */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=1, startColorstr=#0b73ba , endColorstr=#72cdf4)";
+	display:inline-block;
+}
+.container_content{
+	min-height:100px;
+}
+.container_content_text{
+	padding:5px;
+	width:60%;
+	margin:0;
+	display:inline-block;
+	float:left;
+	color:white;
+}
+.second_content{
+	margin-top:30px;
+}
+.mouse_over{
+	
+	width:120px;
+	height:100px;
+	display:block;
+	background-image:url([[pix:block_html_button|click]]);
+	background-position:0px 0px;
+	float:right;
+	vertical-align:middle;
+}
+.mouse_over:hover{
+	background-position:0px -100px;
+}
+@media only screen and (max-width: 1610px){
+	.container_content_text{
+		width:50%;
+	}
+}
+@media only screen and (max-width: 1330px){
+	.container_content_text{
+		width:100%;
+	}
+	.mouse_over{
+		float:left;
+	}
+}
+@media only screen and (max-width: 780px){
+	.container_content_text{
+		width:50%;
+	}
+	.mouse_over{
+		float:right;
+	}
+}
+@media only screen and (max-width:640px){
+	.container_content_text{
+		width:100%;
+	}
+	.mouse_over{
+		float:left;
+	}
+}
